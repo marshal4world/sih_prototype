@@ -6,9 +6,7 @@ const dbRoutes = require('./routes/db-routes');
 var app=express();
 var port=3000||process.env.PORT;
 
-mongoose.connect(, () => {
-    console.log('connected to mongodb');
-});
+
 
 app.use('/app',dbRoutes);
 
