@@ -8,7 +8,7 @@ var port=3000||process.env.PORT;
 
 
 
-app.use('/app',dbRoutes);
+app.use(dbRoutes);
 
 app.listen(port, () => {
     console.log('app now listening for requests on port 3000');

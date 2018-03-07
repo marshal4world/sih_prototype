@@ -1,10 +1,10 @@
 const router=require('express').Router();
 
-router.get('/profile',(req,res)=>{
+router.get('/',(req,res)=>{
   res.send('Welcome');
 });
 
-router.post('/profile',(req,res)=>{
+router.post('/',(req,res)=>{
   res.send("welcome");
 });
 
