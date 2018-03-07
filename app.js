@@ -10,7 +10,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine','ejs');
 
 
-var port=3000||process.env.PORT;
+var port=process.env.PORT||3000;
 
 
 
@@ -18,6 +18,6 @@ app.get('/',(req,res)=>{
   res.render('index');
 });
 
-app.listen(port, () => {
-    console.log('app now listening for requests on port 3000');
+app.listen(port,process.env.IP,()=>{
+  console.log(`Starting at port ${port}`);
 });
