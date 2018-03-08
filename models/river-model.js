@@ -4,9 +4,9 @@ const Schema = mongoose.Schema;
 const riverSchema = new Schema({
     name: String,
     quantity: String,
-    tou: String,
+    tou: String
 });
 
-const River = mongoose.model('river', userSchema);
+const River = mongoose.model('river', riverSchema);
 
 module.exports = River;
