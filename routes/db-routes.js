@@ -4,9 +4,9 @@ const mongoose = require('../databases/mongoose');
 
 router.get('/',(req,res)=>{
   river.find().then((doc)=>{
-    console.log(doc);
+    res.send(doc);
   },(err)=>{
-    console.log(err);
+    res.status(400).send(err);
   })
 });
 
